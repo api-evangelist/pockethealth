@@ -1,0 +1,81 @@
+aid: pockethealth
+name: PocketHealth
+review:
+  question: Does PocketHealth expose a documented public WebSocket API?
+  answer: false
+  date: '2026-07-05'
+  reviewer: API Evangelist
+  asyncapiSpecCreated: false
+  asyncapiScopeNote: |
+    No AsyncAPI document was authored. PocketHealth publicly describes an open
+    RESTful developer API for RIS/PACS/VNA vendors, but does not publish a
+    public API reference, base URL, authentication scheme, or any streaming /
+    server-push transport. There is no documented WebSocket (ws:// or wss://) or
+    SSE endpoint on PocketHealth's own API to model. The underlying imaging
+    transport is DICOM-based background delivery between clinical systems and
+    PocketHealth, not a public realtime web transport.
+findings:
+  summary: |
+    PocketHealth does not publish a documented public WebSocket API. PocketHealth
+    is a patient-centric medical imaging platform (access, view, store, and share
+    diagnostic imaging and reports) that also offers an open, RESTful developer
+    API to RIS/PACS/VNA vendors for embedding patient enrollment, electronic
+    consent, and background record delivery into their own clinical software. The
+    API is partner-gated: it is advertised as free forever for RIS/PACS vendors,
+    providers, and physicians, but the technical reference (base URL, endpoint
+    paths, authentication) is not published on the open web and is provided to
+    engaged vendors through a dedicated integration rep. Because no public API
+    reference exists, no endpoints are confirmed and no OpenAPI definition was
+    authored. No realtime, bidirectional, or streaming WebSocket endpoint is
+    documented on PocketHealth's own API.
+  publicApi: |
+    PocketHealth advertises an open RESTful developer API (announced 2018) for
+    RIS/PACS/VNA vendors. It is described as a simple, predictable REST API that
+    supports patient enrollment, electronic consent, and automated background
+    delivery of DICOM imaging and reports from any DICOM-compliant RIS, PACS, or
+    VNA. However, the API is not self-serve and has no publicly published
+    reference, base URL, or auth documentation; access requires engaging
+    PocketHealth's integration team. It should be treated as a real but
+    partner-gated / relationship-based API rather than an open, self-service one.
+  transports:
+    - protocol: REST
+      scheme: https
+      documented: false
+      note: An open RESTful developer API is advertised for RIS/PACS/VNA vendors, but no public API reference, base URL, or auth scheme is published; access is partner-gated via a dedicated integration rep.
+    - protocol: DICOM
+      scheme: dicom
+      documented: false
+      note: Imaging is ingested/delivered from DICOM-compliant RIS/PACS/VNA systems in the background. This is clinical DICOM transport between systems, not a public web API.
+    - protocol: WebSocket
+      scheme: wss
+      documented: false
+      note: No WebSocket endpoint is documented anywhere in PocketHealth's public materials as of the review date.
+  endpointsConfirmedRest: []
+  endpointsModeled: |
+    The APIs in apis.yml (Patient Enrollment, Electronic Consent, Record Delivery,
+    Image Exchange) are logical capabilities modeled from PocketHealth's public
+    developer-program and Image Exchange descriptions. No concrete endpoint paths,
+    base URL, or authentication details are published publicly, so none are
+    asserted here.
+sources:
+  - url: https://www.pockethealth.com/developers/
+    type: Documentation
+    note: PocketHealth for RIS/PACS Developers - describes a simple RESTful API, dedicated integration support, and free-forever pricing. No public endpoint or auth reference.
+  - url: https://www.pockethealth.com/2018/01/29/pockethealth-releases-developer-api/
+    type: Reference
+    note: 2018 announcement of the open RESTful API for RIS/PACS vendors (patient enrollment, consent, background DICOM/report delivery).
+  - url: https://www.pockethealth.com/providers/pockethealth-image-exchange/
+    type: Reference
+    note: PocketHealth Image Exchange for providers - cross-network imaging exchange with automated ingestion (patient matching, order creation, tag morphing). No public API reference.
+  - url: https://www.pockethealth.com/patients/pricing/
+    type: Pricing
+    note: Patient pricing tiers (Basic free; paid Flex/Unlimited subscriptions).
+actions:
+  asyncapiPath: null
+  apisYmlUpdated: true
+  reason: |
+    No WebSocket or other server-push transport surface exists on PocketHealth's
+    own API, and no public API reference or OpenAPI definition is published. The
+    advertised developer API is partner-gated REST, and the imaging transport is
+    background DICOM between clinical systems. No AsyncAPI document was created
+    because there is no documented realtime web transport to model.

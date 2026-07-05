@@ -1,0 +1,114 @@
+aid: pockethealth
+url: https://raw.githubusercontent.com/api-evangelist/pockethealth/refs/heads/main/apis.yml
+name: PocketHealth
+kind: company
+description: PocketHealth is a patient-centric medical imaging platform that lets
+  patients access, view, store, and share their diagnostic imaging (DICOM) and
+  reports online, and lets healthcare providers exchange imaging across
+  institutions and networks. PocketHealth also publishes an open, RESTful
+  developer API aimed at RIS/PACS/VNA vendors, letting them embed PocketHealth's
+  patient enrollment, electronic consent, and background record-delivery
+  workflows natively into their own clinical software. The developer API is
+  partner-gated - it is free forever for RIS/PACS vendors, healthcare providers,
+  and physicians, but the full technical reference (base URL, endpoint paths,
+  authentication) is not published on the open web; engaged vendors are assigned
+  a dedicated integration rep who provides testing resources and detailed
+  documentation. As a result the APIs below are modeled from PocketHealth's
+  public developer-program descriptions rather than a public API reference or
+  OpenAPI definition.
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+tags:
+- Medical Imaging
+- Healthcare
+- DICOM
+- Image Exchange
+- RIS
+- PACS
+- Interoperability
+- Patient Access
+- Health IT
+created: '2026-07-05'
+modified: '2026-07-05'
+specificationVersion: '0.19'
+apis:
+- aid: pockethealth:pockethealth-patient-enrollment-api
+  name: PocketHealth Patient Enrollment API
+  tags:
+  - Patients
+  - Enrollment
+  - Onboarding
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://www.pockethealth.com/developers/
+  properties:
+  - url: https://www.pockethealth.com/developers/
+    type: Documentation
+  description: Partner-gated developer capability, modeled from PocketHealth's public
+    developer-program description. Lets a RIS/PACS/VNA vendor enroll patients for
+    PocketHealth access natively from within the vendor's own clinical software,
+    with no change to the end-user clinical workflow. Endpoint paths, base URL, and
+    authentication are not published publicly and are provided to engaged vendors by
+    a dedicated integration rep. Endpoints are modeled, not confirmed.
+- aid: pockethealth:pockethealth-consent-api
+  name: PocketHealth Electronic Consent API
+  tags:
+  - Consent
+  - Compliance
+  - Privacy
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://www.pockethealth.com/developers/
+  properties:
+  - url: https://www.pockethealth.com/developers/
+    type: Documentation
+  description: Partner-gated developer capability, modeled from PocketHealth's public
+    developer-program description. Captures and manages electronic patient consent
+    for sharing diagnostic imaging and reports, so that release-of-records workflows
+    can run automatically and securely. Endpoint paths, base URL, and authentication
+    are not published publicly. Endpoints are modeled, not confirmed.
+- aid: pockethealth:pockethealth-record-delivery-api
+  name: PocketHealth Record Delivery API
+  tags:
+  - Imaging
+  - DICOM
+  - Reports
+  - Delivery
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://www.pockethealth.com/developers/
+  properties:
+  - url: https://www.pockethealth.com/developers/
+    type: Documentation
+  description: Partner-gated developer capability, modeled from PocketHealth's public
+    developer-program description. Automates secure background delivery of DICOM
+    imaging studies and associated reports from any DICOM-compliant RIS, PACS, or VNA
+    system to a patient's PocketHealth account, without requiring UI or workflow
+    changes. Endpoint paths, base URL, and authentication are not published publicly.
+    Endpoints are modeled, not confirmed.
+- aid: pockethealth:pockethealth-image-exchange-api
+  name: PocketHealth Image Exchange API
+  tags:
+  - Image Exchange
+  - Interoperability
+  - Sharing
+  - Providers
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://www.pockethealth.com/providers/pockethealth-image-exchange/
+  properties:
+  - url: https://www.pockethealth.com/providers/pockethealth-image-exchange/
+    type: Documentation
+  description: Partner-gated capability, modeled from PocketHealth's public Image
+    Exchange product description. Supports provider-to-provider imaging exchange
+    across external hospitals and out-of-province networks, with an automated
+    ingestion engine (patient matching, order creation, tag morphing) that
+    centralizes inbound and outbound imaging workflows. No public API reference is
+    published for this surface. Endpoints are modeled, not confirmed.
+common:
+- type: LinkedIn
+  url: https://www.linkedin.com/company/pockethealth
+- type: Website
+  url: https://www.pockethealth.com
+- type: Documentation
+  url: https://www.pockethealth.com/developers/
+- type: Plans
+  url: plans/pockethealth-plans-pricing.yml
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

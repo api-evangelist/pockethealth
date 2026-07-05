@@ -1,0 +1,67 @@
+name: PocketHealth Plans and Pricing
+aid: pockethealth
+description: >
+  PocketHealth has two distinct commercial surfaces. For patients, PocketHealth
+  offers a free tier plus paid subscription tiers for extra features. For
+  RIS/PACS/VNA vendors, healthcare providers, and physicians, the developer API
+  and provider integration are described as free forever. Pricing below is
+  sourced from PocketHealth's public patient pricing and developer pages and may
+  change; the developer/provider side is relationship-based (book a demo /
+  dedicated integration rep) rather than self-serve.
+source:
+- url: https://www.pockethealth.com/patients/pricing/
+  type: Pricing
+- url: https://www.pockethealth.com/developers/
+  type: Pricing
+- url: https://www.pockethealth.com/2024/05/01/pockethealth-launches-basic/
+  type: Reference
+plans:
+- name: PocketHealth Basic (Patient)
+  audience: Patients
+  price: 0
+  currency: USD
+  interval: none
+  description: >
+    Free patient account to access, download, and share imaging records at no
+    cost from a PocketHealth-connected site.
+- name: PocketHealth Flex (Patient)
+  audience: Patients
+  price: 10
+  currency: USD
+  interval: month
+  description: >
+    Paid patient subscription adding features such as online image viewing and
+    access to imaging and reports for the account holder and up to four family
+    members.
+- name: PocketHealth Unlimited (Patient)
+  audience: Patients
+  price: 49
+  currency: USD
+  interval: year
+  description: >
+    Annual patient subscription with Flex features plus the ability to upload
+    past records by CD or USB. Exact feature set and pricing vary by region and
+    over time.
+- name: Financial Assistance Program (Patient)
+  audience: Patients
+  price: 0
+  currency: USD
+  interval: none
+  description: >
+    Program that waives paid-plan fees for patients for whom cost is a barrier
+    to accessing additional features.
+- name: RIS/PACS Developer API
+  audience: RIS/PACS/VNA Vendors, Providers, Physicians
+  price: 0
+  currency: USD
+  interval: none
+  description: >
+    PocketHealth states the RESTful developer API is free forever for RIS/PACS
+    vendors, healthcare providers, and physicians. Access is relationship-based:
+    engaged vendors are assigned a dedicated integration rep who provides
+    documentation and testing resources. Not self-serve.
+notes: >
+  Patient pricing tiers and names have changed over time (e.g. earlier
+  per-record and "Lite" pricing). Figures here reflect publicly listed plans as
+  of the review date and should be re-verified against
+  https://www.pockethealth.com/patients/pricing/.
