@@ -101,6 +101,8 @@ apis:
     centralizes inbound and outbound imaging workflows. No public API reference is
     published for this surface. Endpoints are modeled, not confirmed.
 common:
+- type: DomainSecurity
+  url: security/pockethealth-domain-security.yml
 - type: LinkedIn
   url: https://www.linkedin.com/company/pockethealth
 - type: Website
