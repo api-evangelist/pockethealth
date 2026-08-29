@@ -1,5 +1,7 @@
 aid: pockethealth
 url: https://raw.githubusercontent.com/api-evangelist/pockethealth/refs/heads/main/apis.yml
+x-api-posture: no-product-api
+x-api-posture-basis: observed
 name: PocketHealth
 kind: company
 description: PocketHealth is a patient-centric medical imaging platform that lets
