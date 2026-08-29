@@ -16,6 +16,17 @@ description: PocketHealth is a patient-centric medical imaging platform that let
   documentation. As a result the APIs below are modeled from PocketHealth's
   public developer-program descriptions rather than a public API reference or
   OpenAPI definition.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: freemium
   onboarding: unknown
