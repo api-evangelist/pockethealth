@@ -57,6 +57,7 @@ modified: '2026-07-05'
 specificationVersion: '0.23'
 apis:
 - aid: pockethealth:pockethealth-patient-enrollment-api
+  endpointsModeled: true
   name: PocketHealth Patient Enrollment API
   tags:
   - Patients
@@ -74,6 +75,7 @@ apis:
     authentication are not published publicly and are provided to engaged vendors by
     a dedicated integration rep. Endpoints are modeled, not confirmed.
 - aid: pockethealth:pockethealth-consent-api
+  endpointsModeled: true
   name: PocketHealth Electronic Consent API
   tags:
   - Consent
@@ -90,6 +92,7 @@ apis:
     can run automatically and securely. Endpoint paths, base URL, and authentication
     are not published publicly. Endpoints are modeled, not confirmed.
 - aid: pockethealth:pockethealth-record-delivery-api
+  endpointsModeled: true
   name: PocketHealth Record Delivery API
   tags:
   - Imaging
@@ -108,6 +111,7 @@ apis:
     changes. Endpoint paths, base URL, and authentication are not published publicly.
     Endpoints are modeled, not confirmed.
 - aid: pockethealth:pockethealth-image-exchange-api
+  endpointsModeled: true
   name: PocketHealth Image Exchange API
   tags:
   - Image Exchange
