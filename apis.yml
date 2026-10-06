@@ -53,7 +53,7 @@ tags:
 - Patient Access
 - Health IT
 created: '2026-07-05'
-modified: '2026-07-05'
+modified: '2026-10-06'
 specificationVersion: '0.23'
 apis:
 - aid: pockethealth:pockethealth-patient-enrollment-api
@@ -130,6 +130,10 @@ apis:
     centralizes inbound and outbound imaging workflows. No public API reference is
     published for this surface. Endpoints are modeled, not confirmed.
 common:
+- url: https://www.pockethealth.com/news-category/patients/
+  type: Blog
+- url: https://www.pockethealth.com/feed/
+  type: BlogRSS
 - type: DomainSecurity
   url: security/pockethealth-domain-security.yml
 - type: LinkedIn
