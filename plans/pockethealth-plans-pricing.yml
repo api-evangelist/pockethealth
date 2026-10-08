@@ -69,3 +69,41 @@ notes: >
   per-record and "Lite" pricing). Figures here reflect publicly listed plans as
   of the review date and should be re-verified against
   https://www.pockethealth.com/patients/pricing/.
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - free
+  - subscription
+  units: []
+  plans:
+  - name: PocketHealth Basic (Patient)
+    access: other
+    model: free
+    model_how: derived
+    units: []
+    periods: []
+  - name: PocketHealth Flex (Patient)
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: PocketHealth Unlimited (Patient)
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: Financial Assistance Program (Patient)
+    access: other
+    model: free
+    model_how: derived
+    units: []
+    periods: []
+  - name: RIS/PACS Developer API
+    access: other
+    model: free
+    model_how: derived
+    units: []
+    periods: []
