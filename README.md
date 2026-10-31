@@ -1,4 +1,4 @@
-# PocketHealth (pockethealth)
+# PocketHealth
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,70 +64,94 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-PocketHealth is a patient-centric medical imaging platform that lets patients access, view, store, and share their diagnostic imaging (DICOM) and reports online, and lets healthcare providers exchange imaging across institutions and networks. PocketHealth also publishes an open, RESTful developer API aimed at RIS/PACS/VNA vendors, letting them embed PocketHealth's patient enrollment, electronic consent, and background record-delivery workflows natively into their own clinical software.
+PocketHealth is a patient-centric medical imaging platform that lets patients access, view, store, and share their diagnostic imaging (DICOM) and reports online, and lets healthcare providers exchange imaging across institutions and networks. PocketHealth also publishes an open, RESTful developer API aimed at RIS/PACS/VNA vendors, letting them embed PocketHealth's patient enrollment, electronic consent, and background record-delivery workflows natively into their own clinical software. The developer API is partner-gated - it is free forever for RIS/PACS vendors, healthcare providers, and physicians, but the full technical reference (base URL, endpoint paths, authentication) is not published on the open web; engaged vendors are assigned a dedicated integration rep who provides testing resources and detailed documentation. As a result the APIs below are modeled from PocketHealth's public developer-program descriptions rather than a public API reference or OpenAPI definition.
 
-**API access model (read this first):** The PocketHealth developer API is real but **partner-gated**. It is advertised as free forever for RIS/PACS vendors, healthcare providers, and physicians, but the full technical reference - base URL, endpoint paths, and authentication - is **not published on the open web**. Engaged vendors are assigned a dedicated integration rep who provides testing resources and detailed documentation. Because there is no public API reference or OpenAPI definition, the APIs listed below are **logical capabilities modeled from PocketHealth's public developer-program and product descriptions**, not confirmed endpoints. No public WebSocket API exists.
+**Areas:** Medical Imaging · Healthcare · DICOM · Image Exchange · RIS · PACS · Interoperability · Patient Access · Health IT
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/pockethealth/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/pockethealth/refs/heads/main/apis.yml)
+## PocketHealth on APIs.io
 
-## Tags
+Everything profiled for PocketHealth is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/pockethealth/](https://apis.io/providers/pockethealth/)** — or go straight to one of the APIs or properties below.
 
-- Medical Imaging
-- Healthcare
-- DICOM
-- Image Exchange
-- RIS
-- PACS
-- Interoperability
-- Patient Access
-- Health IT
+### APIs (4)
 
-## Timestamps
+- [PocketHealth Patient Enrollment API](https://apis.io/apis/pockethealth/pockethealth-patient-enrollment-api/) — Partner-gated developer capability, modeled from PocketHealth's public developer-program description. Lets a RIS/PACS/VNA vendor enroll patients for…
+- [PocketHealth Electronic Consent API](https://apis.io/apis/pockethealth/pockethealth-consent-api/) — Partner-gated developer capability, modeled from PocketHealth's public developer-program description. Captures and manages electronic patient consent for…
+- [PocketHealth Record Delivery API](https://apis.io/apis/pockethealth/pockethealth-record-delivery-api/) — Partner-gated developer capability, modeled from PocketHealth's public developer-program description. Automates secure background delivery of DICOM imaging…
+- [PocketHealth Image Exchange API](https://apis.io/apis/pockethealth/pockethealth-image-exchange-api/) — Partner-gated capability, modeled from PocketHealth's public Image Exchange product description. Supports provider-to-provider imaging exchange across…
 
-- **Created:** 2026-07-05
-- **Modified:** 2026-07-05
+### Published properties
 
-## APIs (modeled, not confirmed)
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-### PocketHealth Patient Enrollment API
+#### Security (1)
 
-Enroll patients for PocketHealth access natively from within a RIS/PACS/VNA vendor's own clinical software, with no change to the end-user clinical workflow. Endpoint paths, base URL, and authentication are provided to engaged vendors by a dedicated integration rep and are not published publicly.
+Authentication, trust centre, and vulnerability disclosure.
 
-- **Human URL:** [https://www.pockethealth.com/developers/](https://www.pockethealth.com/developers/)
+- [Pockethealth Domain Security](https://apis.io/security/pockethealth/pockethealth-domain-security/)
 
-### PocketHealth Electronic Consent API
+#### Plans and pricing (1)
 
-Capture and manage electronic patient consent for sharing diagnostic imaging and reports, so release-of-records workflows can run automatically and securely. Not publicly documented at the endpoint level.
+Published plans, tiers and prices.
 
-- **Human URL:** [https://www.pockethealth.com/developers/](https://www.pockethealth.com/developers/)
+- [Pockethealth Plans Pricing](https://apis.io/plans/pockethealth/pockethealth-plans-pricing/)
 
-### PocketHealth Record Delivery API
+## Where to find this API
 
-Automate secure background delivery of DICOM imaging studies and associated reports from any DICOM-compliant RIS, PACS, or VNA system to a patient's PocketHealth account, without requiring UI or workflow changes. Not publicly documented at the endpoint level.
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
-- **Human URL:** [https://www.pockethealth.com/developers/](https://www.pockethealth.com/developers/)
-
-### PocketHealth Image Exchange API
-
-Provider-to-provider imaging exchange across external hospitals and out-of-province networks, with an automated ingestion engine (patient matching, order creation, tag morphing) that centralizes inbound and outbound imaging workflows. No public API reference is published for this surface.
-
-- **Human URL:** [https://www.pockethealth.com/providers/pockethealth-image-exchange/](https://www.pockethealth.com/providers/pockethealth-image-exchange/)
-
-## Pricing
-
-- **Patients:** Free Basic account (access, download, share); paid subscription tiers (Flex, Unlimited) add features such as online image viewing, family members, and CD/USB uploads. A Financial Assistance Program waives paid-plan fees where cost is a barrier.
-- **RIS/PACS developers / providers / physicians:** The developer API and provider integration are described as free forever, with access granted through PocketHealth's integration team rather than self-serve signup.
-
-See [plans/pockethealth-plans-pricing.yml](plans/pockethealth-plans-pricing.yml). Patient tiers and names have changed over time; re-verify against [https://www.pockethealth.com/patients/pricing/](https://www.pockethealth.com/patients/pricing/).
-
-## Common Properties
-
-- [LinkedIn](https://www.linkedin.com/company/pockethealth)
 - [Website](https://www.pockethealth.com)
 - [Documentation](https://www.pockethealth.com/developers/)
-- [Plans](plans/pockethealth-plans-pricing.yml)
+- [Blog](https://www.pockethealth.com/news-category/patients/)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 9.1** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 62.5 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 11.9 |
+| Access clarity | 7.9 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 4.7** — Health
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/pockethealth/](https://apis.io/providers/pockethealth/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for PocketHealth: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/pockethealth/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
